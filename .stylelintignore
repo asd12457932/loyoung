@@ -1,0 +1,5 @@
+dist/
+.cache/
+.vscode/
+.nuxt/
+node_modules/
