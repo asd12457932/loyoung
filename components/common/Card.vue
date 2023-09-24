@@ -1,6 +1,5 @@
 <template>
-    <Header />
-    <div class="bg-black min-h-[100vh] pt-[100px] container mx-auto">
+    <div class="bg-white rounded-lg shadow-lg p-4">
         <slot />
     </div>
 </template>

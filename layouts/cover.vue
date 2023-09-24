@@ -1,6 +1,6 @@
 <template>
     <Header />
-    <div class="bg-black min-h-[100vh] pt-[100px] container mx-auto">
+    <div class="bg-black min-h-[100vh]">
         <slot />
     </div>
 </template>

@@ -1,0 +1,68 @@
+{
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "css.validate": false,
+    "less.validate": false,
+    "scss.validate": false,
+    "javascript.validate.enable": false, // use eslint validate
+    "typescript.preferences.importModuleSpecifier": "non-relative",
+    "vetur.enable": false,
+    "stylelint.validate": [
+        "css",
+        "scss",
+        "vue"
+    ],
+    "stylelint.packageManager": "pnpm",
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.fixAll.stylelint": true
+    },
+    "files.associations": {
+        ".env.*": "dotenv"
+    },
+    "files.eol": "\n",
+    "cSpell.words": [
+        "Ahri",
+        "axios",
+        "hohotoy",
+        "Ichiban",
+        "Kuji",
+        "Kujis",
+        "Nuxt",
+        "pinia",
+        "skus",
+        "spu",
+        "spus",
+        "stylelint",
+        "vuelidate",
+        "vueuse",
+        "wukong"
+    ],
+    "eslint.probe": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "html",
+        "vue",
+        "markdown",
+        "ts"
+    ],
+    "eslint.validate": [
+        "javascript",
+        "typescript",
+        "vue"
+    ],
+    "postfix.languages": [
+        "javascript",
+        "typescript",
+        "vue",
+    ],
+    "volar.codeLens.pugTools": false,
+    "tailwindCSS.includeLanguages": {
+        "html": "HTML",
+        "vue": "html",
+        "vue-html": "html",
+        "javascript": "javascript",
+        "typescript": "typescript"
+    },
+}
