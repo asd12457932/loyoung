@@ -13,4 +13,14 @@
     definePageMeta({
         layout: 'cover'
     })
+
+    useHead({
+        title: 'Loyang',
+        meta: [
+            {
+                name: 'description',
+                content: 'Loyang, Theater Visual & Audio Designer'
+            }
+        ]
+    })
 </script>
