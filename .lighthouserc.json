@@ -1,7 +1,7 @@
 {
   "ci": {
     "collect": {
-      "staticDistDir": "./public"
+      "staticDistDir": "./output/public"
     },
     "assert": {
       "preset": "lighthouse:no-pwa",
