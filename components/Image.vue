@@ -3,7 +3,7 @@
         <ClientOnly>
             <img
                 v-show="isImageLoaded"
-                class="absolute inset-0 w-full h-full object-cover object-center rounded-xl"
+                class="absolute inset-0 w-full h-full object-cover object-center"
                 v-bind:src="src"
                 v-bind:alt="alt"
                 v-on:load="isImageLoaded = true"

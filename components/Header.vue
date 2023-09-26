@@ -7,7 +7,9 @@
                 </div>
                 <ul class="hidden md:flex gap-5 text-white">
                     <li v-for="item in navLink" v-bind:key="item.name"
-                        class="cursor-pointer border-b-2 border-transparent hover:border-white transition-all">
+                        class="cursor-pointer border-b-2 border-transparent hover:border-white transition-all" v-bind:class="{
+                            'border-white': route.path === item.path
+                        }">
                         <NuxtLink v-bind:to="item.path">
                             {{ item.name }}
                         </NuxtLink>
@@ -23,12 +25,13 @@
                     <Icon v-on:click="toggleSidebar" name="XMark" class="md:hidden block text-black w-6 h-6" />
                 </div>
                 <ul class="py-2 px-3">
-                    <li v-on:click.capture="toggleSidebar" v-for="item in navLink" v-bind:key="item.name"
-                        class="cursor-pointer border-b-2 border-transparent hover:border-white transition-all my-3 text-xl">
-                        <NuxtLink v-bind:to="item.path">
+                    <NuxtLink  v-for="item in navLink" v-bind:key="item.name" v-bind:to="item.path">
+                        <li v-on:click.capture="toggleSidebar"
+                            class="cursor-pointer border-b-2 border-transparent hover:border-white transition-all my-3 text-xl">
+
                             {{ item.name }}
-                        </NuxtLink>
-                    </li>
+                        </li>
+                    </NuxtLink>
                 </ul>
             </div>
         </Transition>
@@ -36,6 +39,7 @@
 </template>
 <script lang="ts" setup>
 
+const route = useRoute();
 const navLink = [
     {
         name: 'Home',
