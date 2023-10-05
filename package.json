@@ -11,7 +11,9 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "compress-image": "node compress-image.js"
+    "compress-image": "node compress-image.js",
+    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lintfix:js": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
@@ -32,7 +34,10 @@
   },
   "dependencies": {
     "@heroicons/vue": "^2.0.18",
+    "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "crypto-md5": "^1.0.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-nuxt": "^4.0.0",
     "lodash": "^4.17.21",
     "node-dir": "^0.1.17",
     "tinify": "^1.7.1",

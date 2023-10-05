@@ -1,8 +1,8 @@
-/* eslint-disable lodash/import-scope */
+/* eslint-disable no-underscore-dangle */
 /* eslint-disable no-console */
+import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import fs from 'fs';
 import md5 from 'crypto-md5';
 import _ from 'lodash';
 import dir from 'node-dir';

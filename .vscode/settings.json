@@ -5,7 +5,6 @@
     "scss.validate": false,
     "javascript.validate.enable": false, // use eslint validate
     "typescript.preferences.importModuleSpecifier": "non-relative",
-    "vetur.enable": false,
     "stylelint.validate": [
         "css",
         "scss",
